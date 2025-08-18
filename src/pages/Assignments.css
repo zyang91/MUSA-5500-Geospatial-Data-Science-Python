@@ -1,0 +1,113 @@
+
+.container {
+  width: 90%;              /* take 90% of the viewport */
+  max-width: 1400px;       /* prevent too wide */
+  margin: 0 auto;          /* center horizontally */
+  padding: 2rem 0;
+}
+
+/* ===== Assignments Page Styling ===== */
+.assignments-page {
+    font-family: 'Times New Roman', Times, serif;
+    color: #1a1a1a;
+    line-height: 1.7;
+    font-size: 1.2em;
+    padding-bottom: 3rem;
+    padding: 4rem;
+  }
+  
+  /* Title */
+  .assignments-page > h2 {
+    font-size: clamp(1.9rem, 3vw, 2.4rem);
+    font-weight: 700;
+    margin: 0 0 1rem;
+    color: #111827;
+  }
+  
+  /* Paragraph */
+  .assignments-page > p {
+    /* margin: 0 0 1.5rem; */
+    color: #374151;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    line-height: 1.75;
+    /* padding: 4rem; */
+  }
+  
+  /* Table wrapper */
+  .assignments-page .table-wrap {
+    overflow-x: auto;
+  }
+  
+  /* Table */
+  .assignments-page .assignments-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(2, 6, 23, 0.05);
+    font-size: 1.15rem;
+    line-height: 1.6;
+  }
+  
+
+
+  /* Header */
+.assignments-page .assignments-table thead th {
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.15rem;          /* match td */
+  line-height: 1.7;            /* match td */
+  font-weight: 700;            /* bold */
+  text-transform: uppercase;
+  color: #374151;
+  background: #f9fafb;
+  padding: 1.1rem 1.25rem;     /* match td */
+  border-bottom: 1px solid #e5e7eb;
+}
+  
+  /* Body cells */
+  .assignments-page .assignments-table td {
+    padding: 1.1rem 1.25rem;
+    border-bottom: 1px solid #f1f5f9;
+    color: #1f2937;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    vertical-align: top;
+  }
+  
+
+  /* Zebra rows */
+  .assignments-page .assignments-table tbody tr:nth-child(odd) td {
+    background: #fcfdff;
+  }
+  
+  /* Hover effect */
+  .assignments-page .assignments-table tbody tr:hover td {
+    background: #f3f7ff;
+  }
+
+
+
+  /* Assignment title toggle (row heading) */
+.assignments-page .a-toggle {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.3rem;      /* bump up font size */
+  font-weight: 600;        /* make it stand out */
+  color: #111827;          /* darker for contrast */
+}
+
+/* Chevron arrow ▸ size */
+.assignments-page .a-chevron {
+  font-size: 1.1rem;       /* a bit larger than before */
+}
+
+/* "View / Hide" button on the right */
+.assignments-page .a-ghost {
+  font-size: 1.05rem;      /* bigger text */
+  font-weight: 500;
+  padding: 0.45rem 0.8rem; /* bigger button */
+  border-radius: 10px;
+}

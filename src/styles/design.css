@@ -1,0 +1,145 @@
+/* Default container (nice for most pages) */
+.container {
+    width: min(92vw, 1280px);
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  
+  /* Wider canvas for specific pages (e.g., Home) */
+  .container--wide {
+    width: min(96vw, 1680px);
+  }
+  
+  /* Ultra-wide at very large screens */
+  @media (min-width: 1600px) {
+    .container--wide {
+      width: min(96vw, 1800px);
+    }
+  }
+  
+  /* Optional: let a section go edge-to-edge while its inner stays aligned */
+  .section--bleed {
+    margin-inline: calc(50% - 50vw);
+    padding-inline: max(2rem, calc((100vw - min(96vw, 1680px)) / 2));
+    background: #f8f9fa;
+  }
+  /* Hero Section */
+  .hero {
+    background: #f8f9fa;
+    border-radius: 16px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.08);
+  }
+  
+  .hero-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .hero-text {
+    flex: 1;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+  }
+  
+
+  .course-meta {
+    margin-top: 1.5rem;
+    font-family: "Merriweather", Georgia, serif;
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+  }
+  
+  .course-meta p {
+    font-family: "Merriweather", Georgia, serif;
+
+    margin: 0.25rem 0; /* tighten spacing */
+  }
+  
+  .course-meta strong {
+    color: #0056b3; /* UPenn blue accent */
+    font-weight: 600;
+  }
+
+  .hero-image img {
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  /* Section Styles */
+  .section {
+    margin-top: 3rem;
+  }
+  
+  .section-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  /* Card Grid */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 18px rgba(0,0,0,0.12);
+  }
+  
+  .card h2 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    color: #222;
+  }
+  
+  .card p {
+    flex-grow: 1;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card .button {
+    background: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  
+  .card .button:hover {
+    background: #004080;
+  }
+
+
+
+  
