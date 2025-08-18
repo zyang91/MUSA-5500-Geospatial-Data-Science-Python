@@ -2,6 +2,9 @@ import React from "react";
 import "./Schedule.css";
 import { Link } from "react-router-dom";
 
+// at top of the file:
+const base = import.meta.env.BASE_URL; // "/MUSA-5500-Geospatial-Data-Science-Python/" in prod
+
 const schedule = [
   { w: 1, date: "8/28/25", topic: "Course introduction and programming environment setup", lab: "Configure Anaconda, Jupyter, VS Code; Python basics (modules, read/write txt/csv, file ops, exceptions, functions)" },
   { w: 2, date: "9/4/25", topic: "Data Visualization Fundamentals", lab: "Read file and create visualizations using Pandas, Matplotlib" },
@@ -50,10 +53,13 @@ export default function Schedule() {
                 <td>
                   {/* <Link to={`/lecture/${item.lectureId}`}>{item.topic}</Link> */}
 
-                  <a href={`/lectures/lecture${item.w}.html`} target="_blank" rel="noopener noreferrer">
+                  {/* <a href={`/lectures/lecture${item.w}.html`} target="_blank" rel="noopener noreferrer">
                     {item.topic}
-                  </a>
-
+                  </a> */}
+                    <a  href={`${base}lectures/lecture${item.w}.html`}  // or use item.lectureId if you have it
+                        target="_blank" rel="noopener noreferrer" >
+                        {item.topic}
+                    </a>
                 </td>
               </tr>
             ))}
