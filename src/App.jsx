@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import LecturePage from "./pages/LecturePage";
 import Assignments from "./pages/Assignments";
 import FinalProject from "./pages/FinalProjects";
+import Schedule from "./pages/Schedule";
 
 
 function Layout({ children }) {
