@@ -3,6 +3,7 @@ import React from 'react'
 import "./Home.css"
 import { Link } from 'react-router-dom';
 
+const base = import.meta.env.BASE_URL; // "/MUSA-5500-Geospatial-Data-Science-Python/" in prod
 
 function Card({ title, description, link, linkText }) {
     return (
@@ -66,7 +67,12 @@ export default function Home(){
 
                 </div>
                 <div className="hero-image">
-                <img src="/images/maps.png" alt="MUSA Geospatial" />
+                {/* <img src="/images/maps.png" alt="MUSA Geospatial" /> */}
+
+                src={`${base}images/maps.png`}
+                alt="MUSA Geospatial"
+
+
             </div>
             </div>
           </section>
