@@ -63,20 +63,16 @@ export default function Home(){
                       </div>
                     </div>
                   </div>
-
-
                 </div>
                 <div className="hero-image">
-                {/* <img src="/images/maps.png" alt="MUSA Geospatial" /> */}
-
-                src={`${base}images/maps.png`}
-                alt="MUSA Geospatial"
-
-
+                <img
+                  src={`${base}images/maps.png`}
+                  alt="MUSA Geospatial" 
+                />
             </div>
             </div>
           </section>
-    
+          
           <section className="section">
             <h3 className="section-title">Course Navigation</h3>
             <div className="card-grid">
