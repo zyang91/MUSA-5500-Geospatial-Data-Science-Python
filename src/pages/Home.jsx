@@ -1,6 +1,6 @@
 import React from 'react'
 // import "./syllabus.css"; // Optional: if you want local styles
-import "./home.css"
+import "./Home.css"
 import { Link } from 'react-router-dom';
 
 
@@ -32,7 +32,7 @@ export default function Home(){
 
                     <div className="instructors-card" aria-labelledby="course-meta-heading">
                     <h3 id="course-meta-heading" className="meta-title">Course team & contact</h3>
-                  
+
                     <div className="meta-grid">
                       <div className="meta-block">
                         <div className="meta-label">Instructor</div>
