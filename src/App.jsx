@@ -5,7 +5,6 @@ import { HashRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Syllabus from "./pages/Syllabus";
 import Home from "./pages/Home";
 import LecturePage from "./pages/LecturePage";
-import Syllabus from "./pages/syllabus";
 import Assignments from "./pages/Assignments";
 import FinalProject from "./pages/FinalProjects";
 
