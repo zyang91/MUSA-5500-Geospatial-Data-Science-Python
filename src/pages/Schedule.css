@@ -88,3 +88,19 @@
   color: #00408f;
   border-color: #93c5fd;
 }
+
+
+/* Schedule.css */
+.lab-list {
+  margin: 0;
+  padding-left: 1rem;
+}
+.lab-list li {
+  margin: 0.125rem 0;
+}
+
+.schedule-table th:nth-child(3),
+.schedule-table td:nth-child(3) {
+  width: 45%;      /* make the Topic column wider */
+  min-width: 300px;
+}

@@ -1,14 +1,25 @@
 import React from "react";
 import "./Schedule.css";
-import { Link } from "react-router-dom";
 
-// at top of the file:
-const base = import.meta.env.BASE_URL; // "/MUSA-5500-Geospatial-Data-Science-Python/" in prod
+// If you deploy under a base path (e.g., GitHub Pages), BASE_URL helps build correct links
+const base = import.meta.env.BASE_URL || "/";
 
 const schedule = [
-  { w: 1, date: "8/28/25", topic: "Course introduction and programming environment setup", lab: "Configure Anaconda, Jupyter, VS Code; Python basics (modules, read/write txt/csv, file ops, exceptions, functions)" },
-  { w: 2, date: "9/4/25", topic: "Data Visualization Fundamentals", lab: "Read file and create visualizations using Pandas, Matplotlib" },
-  { w: 3, date: "9/11/25", topic: "More on Data Visualization and Intro to Vector Data & GeoPandas", lab: "Read file and create visualizations using Pandas, Matplotlib" },
+  { w: 1, date: "8/28/25", topic: "Course introduction and programming environment setup",
+    // multiple labs → different HTMLs
+    lab: [
+      { label: "Environment setup and Python basics", href: `${base}labs/week-1A-python-basics.html` },
+      { label: "More about Python", href: `${base}labs/week-1B-more-about-python.html` },
+    ],
+  },
+  { w: 2, date: "9/4/25", topic: "Data Visualization Fundamentals",
+    // if you just give strings, we’ll auto-map to lab{ww}-{index}.html
+    lab: ["Read & visualize with Pandas", "Matplotlib basics"],
+  },
+  { w: 3, date: "9/11/25", topic: "More on Data Visualization and Intro to Vector Data & GeoPandas",
+    // single string → auto-map to lab{ww}.html
+    lab: "Read file and create visualizations using Pandas, Matplotlib",
+  },
   { w: 4, date: "9/18/25", topic: "Geospatial data mapping", lab: "Use GeoPandas and Leaflet to do analysis and create maps" },
   { w: 5, date: "9/25/25", topic: "Raster data operations in Python", lab: "Rasterio, NumPy, Xarray to manipulate raster data" },
   { w: 6, date: "10/2/25", topic: "Advanced geospatial analysis", lab: "NetworkX, OSMnx; Fiona+Shapely+Rasterio; Zonal statistics; road network analysis" },
@@ -24,6 +35,59 @@ const schedule = [
   { w: 16, date: "12/4/25", topic: "Final Project Presentations (last day of class)", lab: "—" },
 ];
 
+function LabCell({ item }) {
+  const val = item.lab;
+  const ww = String(item.w).padStart(2, "0");
+
+  if (val === "—" || val == null) return <span>—</span>;
+
+  // Explicit objects: {label, href}
+  if (Array.isArray(val) && val.every(v => v && typeof v === "object")) {
+    return (
+      <ul className="lab-list">
+        {val.map((lab, i) => (
+          <li key={`${item.w}-labobj-${i}`}>
+            <a href={lab.href} target="_blank" rel="noopener noreferrer">{lab.label}</a>
+          </li>
+        ))}
+      </ul>
+    );
+  }
+
+  // Array of strings → auto-link to labs/lab{ww}-{i+1}.html
+  if (Array.isArray(val)) {
+    return (
+      <ul className="lab-list">
+        {val.map((label, i) => (
+          <li key={`${item.w}-lab-${i}`}>
+            <a
+              href={`${base}labs/lab${ww}-${i + 1}.html`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    );
+  }
+
+  // Single string → auto-link to labs/lab{ww}.html
+  if (typeof val === "string") {
+    return (
+      <a
+        href={`${base}labs/lab${ww}.html`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {val}
+      </a>
+    );
+  }
+
+  return <span>—</span>;
+}
 
 export default function Schedule() {
   return (
@@ -38,29 +102,18 @@ export default function Schedule() {
               <th>Week</th>
               <th>Date</th>
               <th>Topic</th>
-              {/* <th>Resources</th> */}
+              <th>Lab</th>
             </tr>
           </thead>
-
           <tbody>
             {schedule.map((item) => (
-              <tr key={item.lectureId} id={item.lectureId}>
+              <tr key={item.w}>
                 <td>{item.w}</td>
                 <td>{item.date}</td>
-                {/* <td>{item.topic}
-                </td> */}
-
-                <td>
-                  {/* <Link to={`/lecture/${item.lectureId}`}>{item.topic}</Link> */}
-
-                  {/* <a href={`/lectures/lecture${item.w}.html`} target="_blank" rel="noopener noreferrer">
-                    {item.topic}
-                  </a> */}
-                    <a  href={`${base}lectures/lecture${item.w}.html`}  // or use item.lectureId if you have it
-                        target="_blank" rel="noopener noreferrer" >
-                        {item.topic}
-                    </a>
-                </td>
+                {/* Topic is plain text (no link) */}
+                <td>{item.topic}</td>
+                {/* Lab contains links (one or many) */}
+                <td><LabCell item={item} /></td>
               </tr>
             ))}
           </tbody>
