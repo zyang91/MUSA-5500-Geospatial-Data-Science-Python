@@ -17,6 +17,7 @@ const assignments = [
 - Follow the initial installation guide on the course website to set up Python locally and launch JupyterLab.
 - See the recommended readings for \`Python\`, mamba/conda, and \`Jupyter\`.
 - Reading
+    - Gettting start with Conda ([link](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html))
     - Starting JupyterLab ([Link](https://jupyterlab.readthedocs.io/en/stable/getting_started/starting.html))
     - Recommended tutorial for students with little Python background: Practical Python Programming ([link](https://dabeaz-course.github.io/practical-python/Notes/Contents.html))
     - Working with Notebooks in JupyterLab ([Link](https://jupyterlab.readthedocs.io/en/stable/user/notebook.html))

@@ -89,6 +89,7 @@ function LabCell({ item }) {
   return <span>—</span>;
 }
 
+
 export default function Schedule() {
   return (
     <div className="container schedule-page">
@@ -105,6 +106,7 @@ export default function Schedule() {
               <th>Lab</th>
             </tr>
           </thead>
+          
           <tbody>
             {schedule.map((item) => (
               <tr key={item.w}>
