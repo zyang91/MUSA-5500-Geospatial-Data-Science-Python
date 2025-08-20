@@ -14,11 +14,18 @@ Labs:
 
 - Week 4. Geospatial Data Handling with GeoPandas
 
-Currently, two official plugins are available:
+- Week 5. Spatial Analysis and Geospatial Operations
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+- Week 6. Introduction to Spatial Databases with PostGIS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+- Week 7. Spatial Data Science with Python
+
+
+
+- Week 8. Advanced Spatial Analysis Techniques
+
+- Week 9. Machine Learning for Spatial Data
+
