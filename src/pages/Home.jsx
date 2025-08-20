@@ -85,11 +85,13 @@ export default function Home(){
 
 
               <Card 
-                title="Lectures" 
+                title="Schedule" 
                 description="Access weekly lectures, hands-on notebooks, and practical demos." 
-                link="/lectures" 
-                linkText="View Lectures"
+                link="/schedule" 
+                linkText="View Weekly Schedule"
               />
+
+
               <Card 
                 title="Assignments" 
                 description="Practice Python spatial workflows and submit interactive notebooks." 

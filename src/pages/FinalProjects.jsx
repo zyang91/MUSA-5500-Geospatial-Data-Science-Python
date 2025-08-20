@@ -1,10 +1,6 @@
 import React from "react";
 import "./FinalProject.css";
 
-const classroomLinks = [
-  { section: "401", url: "https://classroom.github.com/a/iA1Z_0Dv" },
-  { section: "402", url: "https://classroom.github.com/a/FX7-CcSS" },
-];
 
 const requirements = [
   "Data is collected through a means more sophisticated than downloading (e.g., scraping, API).",
@@ -21,28 +17,43 @@ const requirements = [
 
 const examples = [
   {
-    title: "An Analysis System for Taxi Data",
+    title: "Addressing Disparities Across Pennsylvania Counties: A Data-Driven Approach to Equitable Resource Allocation",
     blurb:
-      "A planning, visualization, and prediction toolkit around taxi ridership.",
-    href: "#",
+      "By examining demographic, economic, and environmental data, the goal is to uncover patterns and clusters of counties that highlight disparities and areas of need. ",
+    href: "https://ryanswett01.github.io/final_macy_ryan/",
   },
   {
-    title: "Hospitality in the Era of Airbnb",
+    title: "Fair Pricing and Quality Optimization in Amsterdam’s Airbnb Market",
     blurb:
-      "Measuring Airbnb’s impact on the NYC hospitality industry.",
-    href: "#",
+      "Addressing how multidimensional data can assist renters in determining fair price ranges, encourage hosts to price reasonably, and help the government manage rental quality without bias presents an intriguing research topic.",
+    href: "https://shihangheisenberg.github.io/xx/",
+  },
+
+  {
+    title: "Bus Lane and Transit Signal Prioritization in Philadelphia",
+    blurb:
+      "We specifically look at how a data-driven approach, leveraging ridership patterns, bus operational performance, and demographic indicators, can be utilized to recommend strategic interventions that not only improve transit service reliability but also address mobility challenges for underserved communities.",
+    href: "https://royasains.github.io/finalproj_riyavarun/",
+  },
+
+    {
+    title: "Mapping the Amazon River",
+    blurb:
+      "n this project, the depth of 12 lakes along the Amazon River was estimated using flooding frequency, with areas that flood more being expected to be deeper. Depth data is valuable for ecological and hydrological research, such as determining biodiversity distribution and modeling water stratification.",  
+      href: "https://weijingg.github.io/mapping_amazon/",
+  },
+
+  {
+    title: "Exploring the relationship between heat stress around bus stops and urban environment: A case study of Philadelphia",
+    blurb:
+      "Utilizing Universal Thermal Climate Index (UTCI) data throughout Philadelphia to analyze heat stress variations in the immediate vicinity of bus stops.",
+    href: "https://zoeyguo709.github.io/Final/",
   },
   {
-    title: "Reddit’s Values, IRL Events, and Bad Actors",
+    title: "Spatial Estimation of Seasonal Variability in Chronic Obtrusive Pulmonary Disease Prevalence Based on Geospatial Machine Learning Procedures",
     blurb:
-      "Mining Reddit to infer user values and detect suspicious behavior.",
-    href: "#",
-  },
-  {
-    title: "Orange Line Shutdown & Bluebike Ridership",
-    blurb:
-      "Estimating the transit disruption effects on bike-share demand in Boston.",
-    href: "#",
+      "An Approach Using Earth-Engined-Based Remote Sensing Data, Health Risks Behavior, and Socio-Demographic Variables Across Census Tracts in Pennsylvania.",
+    href: "https://emilyzhou112.github.io/MUSA550-PA-CRD-Prediction/",
   },
 ];
 
@@ -67,12 +78,12 @@ export default function FinalProject() {
         <div className="dates-grid">
           <div className="date-card">
             <div className="date-label">Proposal</div>
-            <div className="date-value">Mon, Dec 4 (or earlier)</div>
+            <div className="date-value">Thu, Nov 6 (or earlier)</div>
             <p className="muted">Proposals must be approved in writing before you proceed.</p>
           </div>
           <div className="date-card">
             <div className="date-label">Final Project</div>
-            <div className="date-value">Wed, Dec 20 @ 11:59 PM</div>
+            <div className="date-value">Sunday, Dec 14 @ 11:59 PM</div>
             <p className="muted">Dates are tentative and subject to change.</p>
           </div>
         </div>
@@ -87,24 +98,12 @@ export default function FinalProject() {
             Use text, images, and interactive visualizations to explain your process and results.
           </li>
           <li>
-            <strong>All project materials</strong> (code, notebooks, spreadsheets, datasets) in your own GitHub repo
-            created via your section’s Classroom link:
-            <ul>
-              {classroomLinks.map((l) => (
-                <li key={l.section}>
-                  Section {l.section}:{" "}
-                  <a href={l.url} target="_blank" rel="noreferrer">
-                    GitHub Classroom invite
-                  </a>
-                </li>
-              ))}
-            </ul>
+            <strong>All project materials</strong> (code, notebooks, spreadsheets, datasets) in your own GitHub repo submited to Canvas.
             Include a <code>README</code> with the URL of your Quarto website.
           </li>
         </ol>
         <div className="callout">
-          <strong>Important:</strong> Put your Quarto website URL in the submission repository’s <code>README</code>, and
-          list the names of all contributors.
+          <strong>Important:</strong> Put your website URL in the submission on Canvas.
         </div>
       </section>
 

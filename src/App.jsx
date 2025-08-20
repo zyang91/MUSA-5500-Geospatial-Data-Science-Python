@@ -4,7 +4,7 @@ import { HashRouter as Router, Route, Routes, Link } from "react-router-dom";
 
 import Syllabus from "./pages/Syllabus";
 import Home from "./pages/Home";
-import LecturePage from "./pages/LecturePage";
+// import LecturePage from "./pages/LecturePage";
 import Assignments from "./pages/Assignments";
 import FinalProject from "./pages/FinalProjects";
 import Schedule from "./pages/Schedule";
@@ -22,7 +22,6 @@ function Layout({ children }) {
             <Link to="/schedule">Schedule</Link>
             <Link to="/assignments">Assignments</Link>
             <Link to="/project">Final Project</Link>
-            {/* <Link to="/syllabus">Syllabus</Link> */}
             {/* <a href="https://github.com/musa-550-fall-2023" target="_blank" rel="noopener noreferrer">GitHub</a> */}
           </nav>
         </div>
@@ -60,7 +59,7 @@ export default function App() {
           <Route path="/assignments" element={<Assignments />}   />
           <Route path="/project" element={<FinalProject />} />
 
-          <Route path="/lecture/:lectureId" element={<LecturePage />} />
+          {/* <Route path="/lecture/:lectureId" element={<LecturePage />} /> */}
         </Routes>
       </Layout>
     </Router>
