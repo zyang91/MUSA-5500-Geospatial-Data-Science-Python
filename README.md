@@ -7,12 +7,11 @@ This course will provide students with the knowledge and tools to turn data into
 - Week 1. Introduction to Python and Programming Basics
 Labs:
   - Week 1A. Environment setup and Python basics [link](public/labs/week-1A-python-basics.ipynb)
-  - Week 1B. More about Python
+  - Week 1B. More about Python ([Link](public/labs/week-1B-more-python.ipynb))
 
 
 - Week 2. Data Visualization Fundamentals
-    - Lab: Data Visualization with Matplotlib and Seaborn [link](public/labs/week-2-data-visualization.ipynb)
-    labs/week-2-data-visualization.html
+    - Lab: Data Visualization with Matplotlib and Seaborn
 
 - Week 3. Data Manipulation with Pandas
 
