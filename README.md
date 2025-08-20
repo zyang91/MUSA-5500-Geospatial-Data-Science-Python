@@ -6,8 +6,8 @@ This course will provide students with the knowledge and tools to turn data into
 ### Outline
 - Week 1. Introduction to Python and Programming Basics
 Labs:
-  - Week 1A. Environment setup and Python basics [link](public/labs/week-1A-python-basics.ipynb)
-  - Week 1B. More about Python ([Link](public/labs/week-1B-more-python.ipynb))
+  - Week 1A. Environment setup and Python basics ([Link](public/labs/week-1A-python-basics.ipynb))
+  - Week 1B. More about Python ([Link](public/labs/week-1B-more-about-python.ipynb))
 
 
 - Week 2. Data Visualization Fundamentals
