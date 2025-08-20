@@ -31,8 +31,7 @@ const schedule = [
   { w: 12, date: "11/13/25", topic: "Machine Learning (I)", lab: "Predictive Modeling with scikit-learn" },
   { w: 13, date: "11/20/25", topic: "Machine Learning (II)", lab: "Predictive Modeling with scikit-learn" },
   { w: 14, date: "11/27/25", topic: "Thanksgiving break — No class", lab: "—" },
-  { w: 15, date: "12/4/25", topic: "Neural Network and Deep Learning", lab: "Build an image-classification NN" },
-  { w: 16, date: "12/4/25", topic: "Final Project Presentations (last day of class)", lab: "—" },
+  { w: 15, date: "12/4/25", topic: "Final Project Presentations (last day of class)", lab: "—" },
 ];
 
 function LabCell({ item }) {
@@ -106,7 +105,7 @@ export default function Schedule() {
               <th>Lab</th>
             </tr>
           </thead>
-          
+
           <tbody>
             {schedule.map((item) => (
               <tr key={item.w}>
