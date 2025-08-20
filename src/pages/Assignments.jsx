@@ -6,25 +6,25 @@ const assignments = [
   {
     id: "a1",
     title: "HW #1 — Python Basics & Setup",
-    assigned: "Wed, Sep 6",
-    due: "Mon, Sep 25 @ 11:59 PM",
+    assigned: "Thu, Sep 4",
+    due: "Sun, Sep 13 @ 11:59 PM",
     detailsMd: `
-**Assigned on:** Wednesday, September 6  
-**Due:** Monday, September 25 at 11:59 PM  
-**Section 401:** Monday, September 25 at 11:59 PM
-
-**Materials:** [MUSA-550-Fall-2023/assignment-1](https://github.com/musa-550-fall-2023/assignment-1)  
-**Submission:** [GitHub Classroom](https://classroom.github.com/a/jpzX7AF4)
+**Assigned on:** Thu, September 4  
+**Due:** Sun, September 13 at 11:59 PM  
 
 ---
 ### Part 1: Installing Python locally and launching Jupyter
 - Follow the initial installation guide on the course website to set up Python locally and launch JupyterLab.
 - See the recommended readings for \`Python\`, mamba/conda, and \`Jupyter\`.
-- Read [Link](https://www.huffpost.com/entry/cities-are-starting-to-pay-attention-to-the-eviction-crisis-thats-devastated-poor-tenants_n_5b1a7b21e4b0bbb7a0dbd59e)
+- Reading
+    - Starting JupyterLab ([Link](https://jupyterlab.readthedocs.io/en/stable/getting_started/starting.html))
+    - Recommended tutorial for students with little Python background: Practical Python Programming ([link](https://dabeaz-course.github.io/practical-python/Notes/Contents.html))
+    - Working with Notebooks in JupyterLab ([Link](https://jupyterlab.readthedocs.io/en/stable/user/notebook.html))
+    - Working with files in JupyterLab ([Link](https://jupyterlab.readthedocs.io/en/stable/user/files.html))
 
 ### Working Locally
 - After activating the course environment, run \`jupyter lab\`.
-- Open the notebook \`assignment-1.ipynb\`.
+- Open the notebook \`assignment-1.ipynb\`. You can download it from here, [link]()
 - Jupyter runs from the current working directory; get it with \`pwd\`.
 - If you cloned the repo, start Jupyter in that folder.
 
