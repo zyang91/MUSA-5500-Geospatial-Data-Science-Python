@@ -24,7 +24,7 @@ const assignments = [
 
 ### Working Locally
 - After activating the course environment, run \`jupyter lab\`.
-- Open the notebook \`assignment-1.ipynb\`. You can download it from here, [link]()
+- Open the notebook \`assignment-1.ipynb\`. You can download it from here, [link](https://github.com/xiaojianggis/MUSA-5500-Geospatial-Data-Science-Python/blob/main/public/assignments/assignment-1.ipynb)
 - Jupyter runs from the current working directory; get it with \`pwd\`.
 - If you cloned the repo, start Jupyter in that folder.
 
@@ -35,31 +35,37 @@ const assignments = [
 
 
 ### Submission Notes
-- Submit via **GitHub Classroom**. Each assignment creates a private repo for you and instructors.
-- **Important:** Commit to the newly created private repo (not your fork of the starter).
-- Ensure your notebook is pushed before the deadline.
-    `
-  },
-  // Add more assignments with `detailsMd` (markdown)…
-  {
-    id: "a2",
-    title: "HW #2 — Pandas & Visualization",
-    assigned: "Wed, Oct 2",
-    due: "Mon, Oct 14 @ 11:59 PM",
-    detailsMd: `
-**Materials:** [assignment-2 (starter)](#)  
-**Submission:** GitHub Classroom
+- Submit via **Canvas**. Please submit your notebook to Canvas directly, not as a GitHub link.
 
-### Overview
-Work with tabular datasets in **Pandas** and create exploratory plots using **Matplotlib**.  
-Please include inline interpretations below each figure.
 
-- Load, clean, and describe the dataset  
-- Create at least **3** diagnostic plots  
-- Discuss findings (3–5 bullet points)
     `
   }
 ];
+
+
+
+
+//   // Add more assignments with `detailsMd` (markdown)…
+//   {
+//     id: "a2",
+//     title: "HW #2 — Pandas & Visualization",
+//     assigned: "Wed, Oct 2",
+//     due: "Mon, Oct 14 @ 11:59 PM",
+//     detailsMd: `
+// **Materials:** [assignment-2 (starter)](#)  
+// **Submission:** GitHub Classroom
+
+// ### Overview
+// Work with tabular datasets in **Pandas** and create exploratory plots using **Matplotlib**.  
+// Please include inline interpretations below each figure.
+
+// - Load, clean, and describe the dataset  
+// - Create at least **3** diagnostic plots  
+// - Discuss findings (3–5 bullet points)
+//     `
+//   }
+
+
 
 export default function Assignments() {
   const [openId, setOpenId] = useState(null);
@@ -67,8 +73,49 @@ export default function Assignments() {
 
   return (
     <div className="container assignments-page">
-      <h2>Assignments</h2>
-      <p>Click a row to view full instructions, links, and submission notes.</p>
+          <h2 id="guidelines">Guidelines</h2>
+          <p>
+            There are several homework assignments during the term and one final
+            project at the end. Your lowest assignment grade is dropped.Assignments are submitted as Jupyter notebooks. To streamline grading,
+            please follow these practices:
+          </p>
+
+          <ol>
+            <li>
+              <strong>Polished notebooks:</strong>
+              <ul>
+                <li>Include your name (and any collaborators) at the top.</li>
+                <li>Remove unused or exploratory fragments.</li>
+                <li>Use Markdown cells and/or code comments to explain steps.</li>
+                <li>Use section headings to organize your analysis.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Reproducible and executable:</strong>
+              <ul>
+                <li>Ensure the notebook runs top‑to‑bottom without errors.</li>
+                <li>
+                  If you use data, either include it in your repo or clearly
+                  document the source so it can be downloaded for grading.
+                </li>
+                <li>
+                  Use <em>relative</em> file paths so the repo structure works
+                  when cloned. See the course note on file paths for more detail.
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <strong>Submit your notebook to Canvas</strong>
+                <ul>
+                  <li>
+                    Use GitHub Classroom for submissions. Each assignment creates a private repo.
+                  </li>
+                </ul>
+              </li>
+          </ol>
+
+      <h2>Assigments</h2>
 
       <div className="table-wrap">
         <table className="assignments-table">
