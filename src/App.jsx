@@ -22,7 +22,8 @@ function Layout({ children }) {
             <Link to="/schedule">Schedule</Link>
             <Link to="/assignments">Assignments</Link>
             <Link to="/project">Final Project</Link>
-            {/* <a href="https://github.com/musa-550-fall-2023" target="_blank" rel="noopener noreferrer">GitHub</a> */}
+            {/* <Link to="/Github">Github</Link> */}
+            <a href="https://github.com/xiaojianggis/MUSA-5500-Geospatial-Data-Science-Python" target="_blank" rel="noopener noreferrer">GitHub</a>
           </nav>
         </div>
       </header>
