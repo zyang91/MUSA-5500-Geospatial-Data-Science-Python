@@ -8,8 +8,8 @@ const schedule = [
   { w: 1, date: "8/28/25", topic: "Course introduction and programming environment setup",
     // multiple labs → different HTMLs
     lab: [
-      { label: "Environment setup and Python basics", href: `${base}labs/week-1A-python-basics.html` },
-      { label: "More about Python", href: `${base}labs/week-1B-more-about-python.html` },
+      { label: "Environment setup and Python basics", href: `${base}labs/week-1-intro-python/week-1A-python-basics.html` },
+      { label: "More about Python", href: `${base}labs/week-1-intro-python/week-1B-more-about-python.html` },
     ],
   },
   { w: 2, date: "9/4/25", topic: "Data Visualization Fundamentals",

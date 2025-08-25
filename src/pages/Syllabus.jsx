@@ -39,7 +39,7 @@ export default function Syllabus() {
             <h3>Instructor</h3>
             <ul>
               <li><strong>Name:</strong> Xiaojiang Li</li>
-              <li><strong>Office:</strong> Meyerson Hall 401</li>
+              <li><strong>Office:</strong> Meyerson Hall 407</li>
               <li><strong>Email:</strong> <a href="mailto:jianglix@design.upenn.edu">jianglix@design.upenn.edu</a></li>
               <li><strong>Office Hours:</strong> Thu 11:00 AM – 12:00 PM</li>
             </ul>
