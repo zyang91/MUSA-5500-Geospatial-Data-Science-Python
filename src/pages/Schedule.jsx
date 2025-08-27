@@ -1,5 +1,6 @@
 import React from "react";
 import "./Schedule.css";
+import { href } from "react-router-dom";
 
 // If you deploy under a base path (e.g., GitHub Pages), BASE_URL helps build correct links
 const base = import.meta.env.BASE_URL || "/";
@@ -14,24 +15,39 @@ const schedule = [
   },
   { w: 2, date: "9/4/25", topic: "Data Visualization Fundamentals",
     // if you just give strings, we’ll auto-map to lab{ww}-{index}.html
-    lab: ["Read & visualize with Pandas", "Matplotlib basics"],
+    lab: [ 
+      { label: "Read & visualize with Pandas", href: `${base}labs/week-1-intro-python/week-1A-python-basics.html` }, 
+      { label: "Matplotlib basics", href: `${base}labs/week-1-intro-python/week-1A-python-basics.html` } 
+    ],
   },
   { w: 3, date: "9/11/25", topic: "More on Data Visualization and Intro to Vector Data & GeoPandas",
     // single string → auto-map to lab{ww}.html
     lab: "Read file and create visualizations using Pandas, Matplotlib",
   },
-  { w: 4, date: "9/18/25", topic: "Geospatial data mapping", lab: "Use GeoPandas and Leaflet to do analysis and create maps" },
-  { w: 5, date: "9/25/25", topic: "Raster data operations in Python", lab: "Rasterio, NumPy, Xarray to manipulate raster data" },
-  { w: 6, date: "10/2/25", topic: "Advanced geospatial analysis", lab: "NetworkX, OSMnx; Fiona+Shapely+Rasterio; Zonal statistics; road network analysis" },
-  { w: 7, date: "10/9/25", topic: "Fall break — No class", lab: "—" },
-  { w: 8, date: "10/16/25", topic: "Web Scraping (I)", lab: "API, parse HTML, store data in database" },
-  { w: 9, date: "10/23/25", topic: "Web Scraping (II)", lab: "Scrape and analyze real data (e.g., GSV)" },
-  { w: 10, date: "10/30/25", topic: "Analyzing & Visualizing Large Datasets; CensusAPI", lab: "Visualize large raster and vector data" },
-  { w: 11, date: "11/6/25", topic: "Web hosting: GitHub, Quarto, create web pages", lab: "Publish notebooks & sites" },
-  { w: 12, date: "11/13/25", topic: "Machine Learning (I)", lab: "Predictive Modeling with scikit-learn" },
-  { w: 13, date: "11/20/25", topic: "Machine Learning (II)", lab: "Predictive Modeling with scikit-learn" },
-  { w: 14, date: "11/27/25", topic: "Thanksgiving break — No class", lab: "—" },
-  { w: 15, date: "12/4/25", topic: "Final Project Presentations (last day of class)", lab: "—" },
+  { w: 4, date: "9/18/25", topic: "Geospatial data mapping", 
+    lab: "Use GeoPandas and Leaflet to do analysis and create maps" },
+  { w: 5, date: "9/25/25", topic: "Raster data operations in Python", 
+    lab: "Rasterio, NumPy, Xarray to manipulate raster data" },
+  { w: 6, date: "10/2/25", topic: "Advanced geospatial analysis", 
+    lab: "NetworkX, OSMnx; Fiona+Shapely+Rasterio; Zonal statistics; road network analysis" },
+  { w: 7, date: "10/9/25", topic: "Fall break — No class", 
+    lab: "—" },
+  { w: 8, date: "10/16/25", topic: "Web Scraping (I)", 
+    lab: "API, parse HTML, store data in database" },
+  { w: 9, date: "10/23/25", topic: "Web Scraping (II)", 
+    lab: "Scrape and analyze real data (e.g., GSV)" },
+  { w: 10, date: "10/30/25", topic: "Analyzing & Visualizing Large Datasets; CensusAPI", 
+    lab: "Visualize large raster and vector data" },
+  { w: 11, date: "11/6/25", topic: "Web hosting: GitHub, Quarto, create web pages", 
+    lab: "Publish notebooks & sites" },
+  { w: 12, date: "11/13/25", topic: "Machine Learning (I)", 
+    lab: "Predictive Modeling with scikit-learn" },
+  { w: 13, date: "11/20/25", topic: "Machine Learning (II)", 
+    lab: "Predictive Modeling with scikit-learn" },
+  { w: 14, date: "11/27/25", topic: "Thanksgiving break — No class", 
+    lab: "—" },
+  { w: 15, date: "12/4/25", topic: "Final Project Presentations (last day of class)", 
+    lab: "—" },
 ];
 
 function LabCell({ item }) {
@@ -85,6 +101,7 @@ function LabCell({ item }) {
     );
   }
 
+  
   return <span>—</span>;
 }
 

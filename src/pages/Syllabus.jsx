@@ -32,7 +32,7 @@ export default function Syllabus() {
             <h3>Logistics</h3>
             <ul>
               <li><strong>Meets:</strong> Thursday, 1:45–4:44 PM</li>
-              <li><strong>Location:</strong> Meyerson Hall B5</li>
+              <li><strong>Location:</strong> David Rittenhouse Laboratory, 3N1H</li>
             </ul>
           </div>
           <div className="hero-card">

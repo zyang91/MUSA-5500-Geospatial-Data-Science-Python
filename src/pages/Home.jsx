@@ -26,7 +26,7 @@ export default function Home(){
                         Use Python to gather, visualize, and analyze geospatial data with an urban planning and public policy focus
                     </h2>
                     <div className='hero-subtitle'>
-                        Python for Spatial Data Science is a graduate-level course in the MUSA program at the University of Pennsylvania. 
+                        Spatial Data Science in Python is a graduate-level course in the MUSA program at the University of Pennsylvania. 
                         Learn to work with spatial data in Python for analysis, visualization, and decision-making.
                     </div>
                     <br />
@@ -48,11 +48,19 @@ export default function Home(){
                       <div className="meta-block">
                         <div className="meta-label">TA</div>
                         <div className="meta-value">
+                          Shengao Yi ·{" "}
+                          <a href="mailto:shengao@design.upenn.edu" className="contact-link">
+                          shengao@design.upenn.edu
+                          </a>
+                        </div>
+
+                        <div className="meta-value">
                           Frank Chen ·{" "}
                           <a href="mailto:fchen9@design.upenn.edu" className="contact-link">
                             fchen9@design.upenn.edu
                           </a>
                         </div>
+
                       </div>
 
                       <div className="meta-block meta-span">
