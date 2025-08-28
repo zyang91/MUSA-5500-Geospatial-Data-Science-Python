@@ -35,7 +35,7 @@ export default function Home(){
                     <h3 id="course-meta-heading" className="meta-title">Course team & contact</h3>
 
                     <div className="meta-grid">
-                      <div className="meta-block">
+                      <div className="meta-block meta-span">
                         <div className="meta-label">Instructor</div>
                         <div className="meta-value">
                           Xiaojiang Li, PhD ·{" "}
@@ -43,25 +43,34 @@ export default function Home(){
                             jianglix@design.upenn.edu
                           </a>
                         </div>
+                        <div className="meta-value">
+                          Office hour: by appointment
+                        </div>
                       </div>
 
-                      <div className="meta-block">
-                        <div className="meta-label">TA</div>
+                      <div className="meta-block meta-span">
+                      <div className="meta-label">TA</div>
                         <div className="meta-value">
                           Shengao Yi ·{" "}
                           <a href="mailto:shengao@design.upenn.edu" className="contact-link">
                           shengao@design.upenn.edu
                           </a>
+                          <br />
+                          {" Office hour:"} Wed 11:45am to 13:45pm, <a href="https://www.wejoinin.com/sheets/irjyz">Schedule</a>, <a href="https://upenn.zoom.us/j/5518937381">Zoom Link</a>
+                          
                         </div>
+                        <br />
 
                         <div className="meta-value">
                           Frank Chen ·{" "}
                           <a href="mailto:fchen9@design.upenn.edu" className="contact-link">
                             fchen9@design.upenn.edu
                           </a>
+                          <br />
+                          {" Office hour:"} Mon, 1:30 to 3:30pm, <a href="https://calendly.com/fchen9-upenn/office-hour">Schedule</a>, <a href="https://upenn.zoom.us/j/2100517683">Zoom Link</a>
                         </div>
-
                       </div>
+
 
                       <div className="meta-block meta-span">
                         <div className="meta-label">School</div>
