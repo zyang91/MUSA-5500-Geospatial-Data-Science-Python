@@ -73,9 +73,9 @@ export default function Home(){
 
 
                       <div className="meta-block meta-span">
-                        <div className="meta-label">School</div>
+                        <div className="meta-label">Classroom</div>
                         <div className="meta-value">
-                          Weitzman School of Design, University of Pennsylvania
+                          David Rittenhouse Laboratory, 3N1H
                         </div>
                       </div>
                     </div>
