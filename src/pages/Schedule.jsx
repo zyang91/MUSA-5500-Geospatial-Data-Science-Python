@@ -16,8 +16,9 @@ const schedule = [
   { w: 2, date: "9/4/25", topic: "Data Visualization Fundamentals",
     // if you just give strings, we’ll auto-map to lab{ww}-{index}.html
     lab: [ 
-      { label: "Read & visualize with Pandas", href: `${base}labs/week-1-intro-python/week-1A-python-basics.html` }, 
-      { label: "Matplotlib basics", href: `${base}labs/week-1-intro-python/week-1A-python-basics.html` } 
+      { label: "Exploratory data science", href: `${base}labs/week-2-data-viz-fundamentals/week-2A-exploratory-data-science-Python.html` }, 
+      { label: "data visualization fundamentals-A", href: `${base}labs/week-2-data-viz-fundamentals/week-2B1-data-visualization-fundamentals-A.html` }, 
+      { label: "data visualization fundamentals-B", href: `${base}labs/week-2-data-viz-fundamentals/week-2B2-data-visualization-fundamentals-B.html` }
     ],
   },
   { w: 3, date: "9/11/25", topic: "More on Data Visualization and Intro to Vector Data & GeoPandas",
